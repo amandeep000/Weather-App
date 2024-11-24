@@ -76,7 +76,7 @@ async function updateWeatherInfo(city) {
   } = weatherData;
   countryTxt.textContent = country;
   tempTxt.textContent = Math.trunc(temp) + "°C";
-  windSpeed.textContent = Math.trunc(speed) + " M/s";
+  windSpeed.textContent = Math.trunc(speed * 3.6) + " Km/h";
   conditonsTxt.textContent = main;
   humidityTxt.textContent = humidity + "%";
   dateTxt.textContent = getCurrentDate();
